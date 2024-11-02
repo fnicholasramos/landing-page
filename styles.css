@@ -34,6 +34,10 @@ i {
     margin-right: 10px;
 }
 
+.mobile {
+    display: none;
+}
+
 .links span:hover {
     text-decoration:underline;
     cursor: pointer;
@@ -114,6 +118,35 @@ i {
         
         .links span{
             display: none;
+        }
+
+        .mobile {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            justify-content: center;
+            /* padding: 5px 0 5px 0; */
+            width: 50%;
+            text-align: center;
+            background-color: #3d3d3d;
+            /* margin-left: 50%; */
+            left: 100%;
+            transition: all .3s;
+        }
+
+        .mobile.active {
+            left: 50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #dbdbdb;
+            padding: 10px 0 10px 0;
+        }
+
+        a:hover {
+            background-color:  #505050;
+            color: #b3cbff;
         }
 
         i {
